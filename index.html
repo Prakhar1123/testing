@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Prakhar Developer portfolio</title>
+    <!-- Add these lines in the head of your HTML file -->
+    <link rel="stylesheet" href="https://unpkg.com/smooth-scrollbar/dist/smooth-scrollbar.css" />
+    <script src="https://unpkg.com/smooth-scrollbar/dist/smooth-scrollbar.js"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        nav {
+            width: 100%;
+            padding: 10px;
+            /* Adjust padding as needed */
+        }
+
+
+
+        body {
+            background-color: black;
+            color: whitesmoke;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 85px;
+            /* background-color: rgb(0 0 33); */
+            /* padding: 0 0 20px; */
+            width: 99%;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(170 107 228);
+            font-size: 1.04rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            align-items: flex-start;
+            /* Keeps items at the start of the flex container */
+        }
+
+        .firstsection {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 82px 0;
+            align-items: center;
+        }
+
+        .firstsection>div {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .leftsection {
+            font-size: 2.6rem;
+        }
+
+        .leftsection .buttons {
+            margin-right: 100px;
+            padding: 0.1px 0;
+        }
+
+        .rightsection img {
+            width: 60%;
+            max-width: 400px;
+            margin-top: 10px;
+            border-radius: 50%;
+        }
+
+        .purple {
+            /* color: blueviolet; */
+        }
+
+        #element {
+            color: rgb(170 107 228);
+            font-size: 1.7rem;
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            margin-bottom: 80px;
+        }
+
+
+
+        main hr {
+            background: #9c97f1;
+            border: 0;
+            height: 1.2px;
+            margin: 33px 84px;
+        }
+
+        .secondsection h1 {
+            font-size: 1.9rem;
+        }
+
+        .text-grey {
+            color: gray;
+        }
+
+        .secondsection .box {
+            background: white;
+            width: 84vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondsection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 130px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 77px;
+            width: 150px;
+            font-size: 16px;
+        }
+
+        .vertical-title h3 {
+            font-size: 0.82rem;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 91px;
+            color: gray;
+            width: 150px;
+            font-size: 10.2px;
+        }
+
+        .img-top {
+            width: 36px;
+            height: 18px;
+            position: relative;
+            top: -20px;
+            left: 0px;
+        }
+
+        .projects-section {
+            max-width: 80vw;
+            margin: auto;
+            padding: 147px 0;
+            margin-top: -2px;
+            margin-bottom: 140px;
+            /* Add margin-bottom to create a gap */
+        }
+
+        .project-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: -3px;
+        }
+
+        .project-box {
+            width: calc(100% - 20px);
+            margin: 20px 0;
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+            background-color: rgb(0 0 33);
+        }
+
+        .project-box img {
+            width: 100%;
+            height: auto;
+        }
+
+        .project-info {
+            padding: 20px;
+        }
+
+        .project-info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .buttons a {
+            display: block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #007bff;
+            border-radius: 5px;
+        }
+
+        .image-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .image-container img {
+            width: 49.6%;
+            height: auto;
+        }
+
+
+
+        .buttons {
+            display: flex;
+            margin-left: -12px;
+            justify-content: space-around;
+        }
+
+        .buttons a {
+            display: block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #007bff;
+            border-radius: 5px;
+        }
+
+        .image-container img {
+            width: 49.6%;
+            height: 170px;
+            justify-content: space-between;
+        }
+
+        .contact-section {
+            max-width: 80vw;
+            margin: auto;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            margin: 10px 0;
+            padding: 8px;
+            width: 50%;
+            box-sizing: border-box;
+        }
+
+        .contact-form button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .about-section {
+            max-width: 80vw;
+            margin: auto;
+            padding: 40px 0;
+            text-align: center;
+            background-color: rgb(0 0 33);
+            color: white;
+        }
+
+        .about-content {
+            max-width: 60vw;
+            margin: auto;
+        }
+
+        .about-content h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .about-content p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .about-content .purple {
+            color: blueviolet;
+        }
+
+        footer {
+            background-color: #0e0e1a;
+        }
+
+        .footer {
+            display: flex;
+            padding: 20px 82px;
+            justify-content: space-evenly;
+        }
+
+        .footer .footer-third {
+            margin-right: 158px;
+        }
+
+        .footer .footer-first {
+            margin-left: 143px;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer div {
+            width: 124px;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+        }
+
+        .leftsection .btn {
+            padding: 12px;
+            background: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        .skills-section .icon {
+            width: 16px;
+            height: 16px;
+            margin-right: 5px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .firstsection {
+                flex-direction: column;
+                /* align-items: center; */
+            }
+
+            nav {
+                width: 100%;
+                padding: 0;
+                overflow: hidden;
+                /* Added overflow property */
+            }
+
+            nav a {
+                display: block;
+                width: 100%;
+            }
+
+            nav .left {
+
+                font-size: 0.7rem;
+                margin-top: -4px;
+
+            }
+
+            nav .right {
+                font-size: 0.55rem;
+                margin-top: 0px;
+            }
+
+            .secondsection .box {
+                display: flex;
+                width: 84vw;
+                flex-wrap: wrap;
+                margin: 55px -21px;
+                justify-content: space-around;
+            }
+
+            .secondsection .h1 {
+                font-size: 1.5rem;
+                margin-left: -10px;
+            }
+
+
+            .leftsection {
+                font-size: 1.6rem;
+                margin-left: 1px;
+                text-align: center;
+            }
+
+            .leftsection .buttons {
+                display: flex;
+                flex-direction: row;
+                /* Changed flex-direction to row */
+                justify-content: space-between;
+                /* Added justify-content property */
+                gap: 10px;
+                margin-left: 76px;
+                /* Added gap between buttons */
+            }
+
+            .leftsection .buttons a {
+                margin-bottom: 0;
+                /* Removed margin-bottom */
+            }
+
+
+            .rightsection {
+                order: -1;
+            }
+
+            .rightsection img {
+
+                width: 42%;
+                max-width: 400px;
+                margin-top: 10px;
+                border-radius: 50%;
+                margin-left: 110px;
+            }
+
+            .secondsection text-grey .h1 {
+                margin-left: 12px;
+            }
+
+            .secondsection,
+            .projects-section,
+            .about-section {
+                max-width: 90vw;
+                margin-top: 126px;
+            }
+
+            .contact-section {
+                max-width: 90vw;
+            }
+
+            .project-box {
+                width: calc(100% - 20px);
+            }
+
+            .image-container img {
+                width: 100%;
+                height: auto;
+            }
+
+            .footer {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .footer .footer-first {
+                margin-left: 30px;
+            }
+
+            .footer .footer-third {
+                margin-left: 242px;
+                margin-top: 10px;
+                color: #1e2167;
+            }
+
+            .footer .footer-third .ul {
+                margin-left: 110px;
+
+
+            }
+
+            .footer div {
+                width: 100%;
+            }
+
+            .secondsection .vertical {
+                height: 46px;
+                width: 1px;
+                background-color: white;
+                margin: auto;
+                /* Adjusted margin for vertical */
+            }
+
+            .vertical-title {
+                position: relative;
+                top: 0;
+                /* Resetting top position */
+                width: 100%;
+                /* Full width on smaller screens */
+                font-size: 1rem;
+                text-align: center;
+                /* Centering text */
+            }
+
+            .vertical-title h3 {
+                font-size: 0.82rem;
+            }
+
+            .vertical-desc {
+                position: relative;
+                top: 0;
+                /* Resetting top position */
+                color: gray;
+                width: 100%;
+                /* Full width on smaller screens */
+                font-size: 0.9rem;
+                text-align: center;
+                /* Centering text */
+                margin-top: 10px;
+                /* Adjusted top margin for spacing */
+            }
+
+            .vertical {
+                width: 100%;
+                margin: 20px 0;
+                text-align: center;
+            }
+
+            .vertical img {
+                width: 36px;
+                height: 18px;
+                margin-bottom: 10px;
+            }
+
+            .vertical-title {
+                font-size: 1rem;
+            }
+
+            .vertical-desc {
+                font-size: 9.65px;
+                color: gray;
+            }
+
+            .vertical-title,
+            .vertical-desc {
+                text-align: center;
+                margin-top: 10px;
+                /* Adjusted top margin for spacing */
+            }
+
+            .secondsection {
+                margin-bottom: 795px;
+                padding-top: 10px;
+            }
+
+            .projects-section {
+                max-width: 80vw;
+                margin: 40px auto;
+                /* Adjust the margin to control the space between sections */
+                padding: 80px 0;
+                /* Adjust the top and bottom padding to your preference */
+            }
+
+            .about-section {
+                margin-top: -1px;
+            }
+
+            .nav {
+                max-width: 112%;
+            }
+
+            .header {
+                margin-left: 24px;
+            }
+
+            main hr {
+                background: #9c97f1;
+                border: 0;
+                height: 1.2px;
+                margin: 32px 12px;
+                margin-right: 12px;
+            }
+
+            body {
+                max-width: 100%;
+                overflow-x: hidden;
+                padding: 0;
+                font-size: 16px;
+            }
+
+
+            .firstsection {
+                margin: 20px 0;
+                /* Adjust the margin as needed */
+            }
+
+            .nav .left {
+                font-size: 0.6rem;
+                margin-top: -2px;
+            }
+
+            .skills-section {
+                max-width: 80vw;
+                margin: 40px auto 0px;
+                padding: -24px 0;
+                text-align: center;
+                color: white;
+                margin-top: 507px;
+            }
+
+        }
+
+        @media only screen and (min-width: 601px) and (max-width: 1024px) {
+            .firstsection>div {
+                width: 45%;
+            }
+
+            .rightsection img {
+                max-width: 100%;
+            }
+
+            .secondsection,
+            .projects-section,
+            .about-section,
+            .contact-section {
+                max-width: 70vw;
+                margin: auto;
+            }
+
+            .project-box {
+                width: calc(50% - 20px);
+            }
+
+            .secondsection .box {
+                width: 84vw;
+            }
+
+            .footer .footer-first {
+                margin-right: 30px;
+            }
+        }
+
+        .skills-section {
+            max-width: 80vw;
+            margin: 40px auto 0;
+            padding: 40px 0;
+            text-align: center;
+            color: white;
+            margin-top: 536px;
+        }
+
+        .skills-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+            flex-wrap: wrap;
+            /* Allow items to wrap to the next line */
+        }
+
+        .branch {
+            width: 45%;
+            padding: 20px;
+            border-radius: 8px;
+            display: flex;
+            /* Use flexbox to align items */
+            flex-direction: column;
+            /* Stack items vertically */
+            align-items: center;
+            /* Center items horizontally */
+            margin-bottom: 20px;
+            box-sizing: border-box;
+        }
+
+        .branch h2 {
+            font-size: 1.5rem;
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        .branch ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .branch li {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: white;
+            display: flex;
+            /* Use flexbox to align items */
+            align-items: center;
+            /* Center items horizontally */
+        }
+
+        .icon {
+            width: 16px;
+            height: 16px;
+            margin-right: 5px;
+        }
+
+        @media only screen and (min-width: 1025px) {
+            .firstsection>div {
+                width: 40%;
+            }
+
+            .rightsection img {
+                max-width: 400px;
+            }
+
+            .secondsection,
+            .projects-section,
+            .about-section,
+            .contact-section {
+                max-width: 80vw;
+                margin: auto;
+            }
+
+            .project-box {
+                width: calc(30% - 20px);
+            }
+
+            .secondsection .box {
+                width: 84vw;
+            }
+        }
+
+        @media only screen and (min-width: 601px) and (max-width: 937px) {
+
+            .skills-section,
+            .projects-section,
+            .about-section,
+            .contact-section,
+            footer {
+                max-width: 80vw;
+                margin-left: 10px;
+            }
+
+            .secondsection .box {
+                width: 86vw;
+            }
+
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#" onclick="showSection('home-section')">Home</a></li>
+                    <li><a href="#" onclick="showSection('experience-section')">Experience</a></li>
+                    <li><a href="#" onclick="showSection('skills-section')">Skills</a></li>
+
+                    <li><a href="#" onclick="showSection('projects-section')">Projects</a></li>
+                    <li><a href="#" onclick="showSection('about-section')">About</a></li>
+                    <li><a href="#" onclick="showSection('contact-section')">Contact </a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home-section" class="firstsection">
+            <div class="leftsection">
+                Hi, My name is <br> <span class="purple">Prakhar Kumar </span>
+                <div>
+                    and I'm a passionate<div></div>
+                </div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn" id="git">Visit Github</button>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="prakhar12.jpg">
+            </div>
+        </section>
+        <hr />
+        <section class="secondsection" id="experience-section">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <!-- <img src="tcs.png" class="img-top" /> -->
+                    <div class="vertical-title">
+                        <!-- <h3> Assistant System Engineer</h3> -->
+                        <br />
+                        <!-- Full Stack Developer (2021-2022) -->
+
+
+                    </div>
+                    <div class="vertical-desc">
+                        <h2>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, id impedit sunt rem minima obcaecati incidunt recusandae illo. Quibusdam omnis magnam dolore aperiam dolorem fuga perferendis quia praesentium, labore nesciunt?
+                        </h2>
+                    </div>
+
+                </div>
+                <div class="vertical">
+                    <!-- <img src="tcs.png" class="img-top" /> -->
+                    <div class="vertical-title">
+                        <!-- <h3> System Engineer</h3> -->
+                        <br />
+                        <!-- Full Stack Developer (2022-2023) -->
+
+                    </div>
+                    <div class="vertical-desc">
+                        <h2> Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, ut inventore tempore nisi placeat error explicabo natus nam facere perspiciatis eum quo quas delectus maxime voluptate nostrum tempora. Debitis, modi.
+                        </h2>
+                    </div>
+
+                </div>
+                <div class="vertical">
+                    <!-- <img src="alphatech-software.jpg" class="img-top" /> -->
+                    <div class="vertical-title">
+                        <!-- <h3> Web Developer Intern</h3> -->
+                        <br />
+                        <!-- Full Stack Developer Aug-Oct(2020) -->
+
+                    </div>
+                    <div class="vertical-desc">
+                        <h2> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut possimus quas aliquam exercitationem maiores nemo tenetur voluptate ipsa. Alias nobis obcaecati repellat magni excepturi? Fugiat distinctio inventore ipsam consequuntur architecto!
+                        </h2>
+                    </div>
+                </div>
+
+            </div>
+
+
+            </div>
+        </section>
+        <!-- ... (previous HTML code) ... -->
+
+
+        <section class="skills-section" id="skills-section">
+            <h1>Skills</h1>
+            <div class="skills-container">
+                <div class="branch left-branch">
+                    <h2>Frontend</h2>
+                    <ul>
+                        <li><img src="html.png" alt="HTML5" class="icon"> HTML5</li>
+                        <li><img src="css.png" alt="CSS3" class="icon"> CSS3</li>
+                        <li><img src="javascript.png" alt="JavaScript" class="icon"> JavaScript</li>
+                        <li><img src="react.png" alt="React.js" class="icon"> React.js</li>
+                        <li><img src="next.png" alt="Next.js" class="icon"> Next.js</li>
+                    </ul>
+                </div>
+                <div class="branch right-branch">
+                    <h2>Backend</h2>
+                    <ul>
+                        <li><img src="node.png" alt="Node.js" class="icon"> Node.js</li>
+                        <li><img src="express.png" alt="Express.js" class="icon"> Express.js</li>
+                        <li><img src="python.png" alt="Python" class="icon"> Python</li>
+                        <li><img src="mysql.png" alt="SQL" class="icon"> SQL</li>
+                        <li><img src="restapi.png" alt="REST APIs" class="icon"> REST APIs</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- ... (previous HTML code) ... -->
+
+        <section class="projects-section" id="projects-section">
+            <h1 style="margin-left: 10px; font-size: 1.9rem;margin-top: -38px;">Projects</h1>
+
+            <div class="project-container">
+                <!-- Project 1 -->
+                <div class="project-box">
+                    <div class="image-container">
+                        <img src="shoe22.jpeg" alt="E-Commerce Project Image 1" />
+                        <img src="shoe.jpeg" alt="E-Commerce Project Image 2" />
+                    </div>
+                    <div class="project-info">
+                        <h3>E-Commerce Project</h3>
+                        <p>Developed a comprehensive platform for online shoe shopping that enables user authentication,
+                            shoe item display, shopping cart functionality, and secure payment processing.</p>
+                        <div class="buttons">
+                            <a href="https://ucxzhgycdg8hi6glxjtrzg.on.drv.tw/Online%20shoe%20shopping/prakhar1.html"
+                                target="_blank">Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-box">
+                    <div class="image-container">
+                        <img src="ironman.jpeg" style="margin-right: 2.7px;" alt="Avengers Game Image 1" />
+                        <img src="captain.jpeg" alt="Avengers Game Image 2" />
+                    </div>
+                    <div class="project-info">
+                        <h3>Avengers Game using React JS</h3>
+                        <p>Developed dynamic Marvel-themed quiz app using React. Integrated useState for question
+                            progression, user scoring. Demonstrated React component skills, interactive UI.</p>
+                        <div class="buttons">
+                            <a href="https://prakhar1123.github.io/avengers/" target="_blank">Demo</a>
+                            <a href="https://github.com/Prakhar1123/avengers" target="_blank">GitHub</a>
+                            <!-- Add the GitHub link when available -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-box">
+                    <div class="image-container">
+                        <img src="todo.jpg" alt="Todo-List using React Js Image 1" />
+                        <img src="todo1.jpg" alt="Todo-List using React Js Image 2" />
+                    </div>
+                    <div class="project-info">
+                        <h3>Todo-List using React Js</h3>
+                        <p>Created a task management application that enables users to view, add, mark complete, delete,
+                            and edit tasks using mouse and keyboard inputs.</p>
+                        <div class="buttons">
+                            <a href="https://prakhar1123.github.io/Todolist_new/" target="_blank">Demo</a>
+                            <!-- Add the Demo link when available -->
+                            <a href="https://github.com/Prakhar1123/React-Js" target="_blank">GitHub</a>
+                            <!-- Add the GitHub link when available -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Add more project boxes as needed -->
+
+        </section>
+        <!-- Add the following section to your existing HTML file, preferably after the projects section -->
+
+        <section class="about-section" id="about-section">
+            <div class="about-content">
+                <h1>About Me</h1>
+                <p>
+                    Hello! I'm <span class="purple">Prakhar Kumar</span>, a passionate Full Stack Developer with 2.4
+                    years of experience at TCS.
+                    I graduated from CMRIT in August 2021 with a CGPA of 6.72.
+                </p>
+                <p>
+                    In addition to my professional journey, I'm also a content creator on YouTube, where I share my
+                    knowledge
+                    on Full Stack Development. My channel "Code Tech Gyan" has gathered over 900 subscribers, and I love
+                    contributing to the
+                    developer community by creating informative and engaging content.
+                </p>
+                <p>
+                    I believe in continuous learning and strive to stay updated with the latest technologies in the
+                    ever-evolving
+                    field of web development.
+                </p>
+            </div>
+        </section>
+
+
+        <section class="contact-section" id="contact-section">
+            <h1>Contact Me</h1>
+            <div class="contact-form">
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <textarea placeholder="Your Message"></textarea>
+                <button>Send Message</button>
+            </div>
+        </section>
+        <!-- ... (remaining HTML code) ... -->
+
+        <!-- Add more project boxes as needed -->
+
+        </section>
+        <footer>
+            <footer>
+                <div class="footer">
+                    <div class="footer-first">
+                        <h3>Prakhar's Developer portfolio</h3>
+                    </div>
+
+                    <div class="footer-third">
+                        <ul>
+                            <h6>
+                                <li>Social Media connect</li>
+                            </h6>
+
+                            <a style="color: grey;text-decoration: none;"
+                                href="https://www.linkedin.com/in/prakhar-kumar1/">
+                                <li>Linkedin</li>
+                            </a>
+                            <a style="color: grey;text-decoration: none;" href="https://www.instagram.com/prakhar6989/">
+                                <li>Instagram</li>
+                            </a>
+                            <a style="color: grey;text-decoration: none;" href="https://www.youtube.com/codetechgyan">
+                                <li>YouTube</li>
+                            </a>
+                        </ul>
+                    </div>
+
+
+
+                </div>
+                <div class="footer-rights">
+                    Prakhar'sportfolio.com||All rights reserved
+
+                </div>
+            </footer>
+
+            <!-- ... (remaining HTML code) ... -->
+
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        document.querySelector('.btn').addEventListener('click', function () {
+            window.location.href = "https://drive.google.com/uc?export=download&id=1lhe9ECTmuHoQEC23LpUahtcBdD_KsI0P";
+        });
+        var typed = new Typed('#element', {
+            strings: ['Full Stack Developer', 'UI Developer', 'React Developer', 'Youtuber'],
+            typeSpeed: 50,
+        });
+
+        document.getElementById('git').addEventListener('click', function () {
+            window.location.href = "https://github.com/Prakhar1123?tab=repositories";
+        });
+        function showSection(sectionId, scrollDirection) {
+            const section = document.getElementById(sectionId);
+
+            if (section) {
+                const yOffset = -85; // Adjust this value based on your header height
+                const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+                window.scrollTo({ top: y, behavior: 'smooth' });
+            }
+            const scrollOptions = {
+                top: y,
+                behavior: 'smooth'
+            };
+            //scroll
+            if (scrollDirection === 'bottomToTop') {
+                window.scrollTo(scrollOptions);
+            } else {
+                window.scrollTo({ top: y, behavior: 'smooth' });
+            }
+        }
+    </script>
+</body>
+
+</html>

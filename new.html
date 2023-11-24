@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prakhar Developer Portfolio</title>
+    <!-- Add these lines in the head of your HTML file -->
+    <link rel="stylesheet" href="https://unpkg.com/smooth-scrollbar/dist/smooth-scrollbar.css" />
+    <script src="https://unpkg.com/smooth-scrollbar/dist/smooth-scrollbar.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+            color: whitesmoke;
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 85px;
+            width: 100%;
+            padding: 10px;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(170 107 228);
+            font-size: 1.04rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstsection {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 82px 0;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .firstsection>div {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .leftsection {
+            font-size: 2.6rem;
+            text-align: center;
+        }
+
+        .leftsection .buttons {
+            margin: 20px auto;
+        }
+
+        .rightsection img {
+            width: 100%;
+            max-width: 400px;
+            margin-top: 10px;
+            border-radius: 50%;
+        }
+
+        .secondsection {
+            max-width: 90vw;
+            margin: auto;
+            margin-bottom: 80px;
+        }
+
+        main hr {
+            background: #9c97f1;
+            border: 0;
+            height: 1.2px;
+            margin: 33px 0;
+        }
+
+        .secondsection h1 {
+            font-size: 1.9rem;
+        }
+
+        .text-grey {
+            color: gray;
+        }
+
+        .secondsection .box {
+            background: white;
+            width: 100%;
+            margin: 56px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .vertical {
+            width: 150px;
+            text-align: center;
+        }
+
+        .vertical img {
+            width: 36px;
+            height: 18px;
+            margin-bottom: 10px;
+        }
+
+        .projects-section {
+            max-width: 90vw;
+            margin: auto;
+            padding: 147px 0;
+        }
+
+        .project-box {
+            width: 100%;
+            margin: 20px 0;
+            background: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden;
+            background-color: rgb(0 0 33);
+        }
+
+        .project-info {
+            padding: 20px;
+        }
+
+        .project-info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .buttons a {
+            display: block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #007bff;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .contact-section {
+            max-width: 90vw;
+            margin: auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .about-section {
+            max-width: 90vw;
+            margin: auto;
+            padding: 40px 20px;
+            text-align: center;
+            background-color: rgb(0 0 33);
+            color: white;
+        }
+
+        .about-content {
+            max-width: 100%;
+            margin: auto;
+        }
+
+        .about-content h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .about-content p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .about-content .purple {
+            color: blueviolet;
+        }
+
+        footer {
+            background-color: #0e0e1a;
+        }
+
+        .footer {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 20px;
+            justify-content: space-between;
+        }
+
+        .footer div {
+            width: 100%;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer .footer-first,
+        .footer .footer-third {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+        }
+
+        .leftsection .btn {
+            padding: 12px;
+            background: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+
+        .skills-section .icon {
+            width: 16px;
+            height: 16px;
+            margin-right: 5px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .nav {
+                padding: 10px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .leftsection {
+                margin-left: 0;
+            }
+
+            .rightsection img {
+                margin-left: 0;
+                margin-top: 20px;
+            }
+
+            .firstsection {
+                margin: 52px 0;
+            }
+
+            .secondsection h1 {
+                font-size: 1.5rem;
+            }
+
+            .project-info h3 {
+                font-size: 1.3rem;
+            }
+
+            .buttons a {
+                margin-top: 20px;
+            }
+
+            .footer div {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (min-width: 601px) and (max-width: 1024px) {
+            .nav {
+                padding: 10px;
+            }
+
+            .leftsection {
+                font-size: 2rem;
+            }
+
+            .rightsection img {
+                margin-top: 10px;
+            }
+
+            .firstsection {
+                margin: 72px 0;
+            }
+
+            .secondsection h1 {
+                font-size: 1.7rem;
+            }
+
+            .project-info h3 {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="left">Prakhar</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="firstsection" id="home">
+        <div class="leftsection">
+            <h1>Prakhar Srivastava</h1>
+            <p>Web Developer</p>
+            <div class="buttons">
+                <button class="btn">Resume</button>
+            </div>
+        </div>
+        <div class="rightsection">
+            <img src="https://via.placeholder.com/400" alt="Profile Image">
+        </div>
+    </div>
+
+    <div class="secondsection" id="about">
+        <h1>About Me</h1>
+        <div class="box">
+            <p class="text-grey">
+                Hello! I'm Prakhar Srivastava, a passionate web developer with a strong foundation in front-end
+                technologies. I enjoy turning complex problems into simple, beautiful, and intuitive designs. My goal
+                is to make a positive impact on people's lives through the products I create.
+            </p>
+        </div>
+    </div>
+
+    <main>
+        <hr>
+    </main>
+
+    <div class="skills-section" id="skills">
+        <h1>Skills</h1>
+        <div class="box">
+            <div class="vertical">
+                <img class="icon" src="https://via.placeholder.com/20" alt="HTML Icon">
+                HTML
+            </div>
+            <div class="vertical">
+                <img class="icon" src="https://via.placeholder.com/20" alt="CSS Icon">
+                CSS
+            </div>
+            <div class="vertical">
+                <img class="icon" src="https://via.placeholder.com/20" alt="JavaScript Icon">
+                JavaScript
+            </div>
+            <div class="vertical">
+                <img class="icon" src="https://via.placeholder.com/20" alt="React Icon">
+                React
+            </div>
+            <div class="vertical">
+                <img class="icon" src="https://via.placeholder.com/20" alt="Node.js Icon">
+                Node.js
+            </div>
+            <div class="vertical">
+                <img class="icon" src="https://via.placeholder.com/20" alt="MongoDB Icon">
+                MongoDB
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <hr>
+    </main>
+
+    <div class="projects-section" id="projects">
+        <h1>Projects</h1>
+        <div class="project-box">
+            <div class="image-container">
+                <img src="https://via.placeholder.com/800x400" alt="Project Image">
+            </div>
+            <div class="project-info">
+                <h3>Project Title</h3>
+                <p class="text-grey">
+                    A brief description of the project. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Vivamus quis libero at leo pulvinar tincidunt. Nullam semper ullamcorper risus at tristique.
+                </p>
+                <div class="buttons">
+                    <a href="#" target="_blank">Demo</a>
+                    <a href="#" target="_blank">Code</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <hr>
+    </main>
+
+    <div class="contact-section" id="contact">
+        <h1>Contact Me</h1>
+        <div class="box">
+            <p class="text-grey">
+                Let's work together! Feel free to reach out if you have any questions or if you'd like to
+                collaborate on a project.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h2>Prakhar</h2>
+                <p class="text-grey">Web Developer</p>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <p class="text-grey">Connect with me:</p>
+                <div class="social-icons">
+                    <a href="#" target="_blank"><img class="icon" src="https://via.placeholder.com/20"
+                            alt="LinkedIn Icon"></a>
+                    <a href="#" target="_blank"><img class="icon" src="https://via.placeholder.com/20"
+                            alt="GitHub Icon"></a>
+                    <a href="#" target="_blank"><img class="icon" src="https://via.placeholder.com/20"
+                            alt="Twitter Icon"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
